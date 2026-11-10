@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Mouja — Club de boxe, cross-training et mobilité à Aïn Diab, Casablanca</title>
+  <meta name="description" content="Boxe anglaise, cross-training, mobilité, yoga face à l'océan et running club. Planning des cours et réservation par WhatsApp." data-i18n-attr="content:meta.desc">
+  <meta name="theme-color" content="#101418">
+  <link rel="icon" href="assets/mouja.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Barlow:wght@400;500;600&family=Changa:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Mouja">
+        <span class="brand-mark" aria-hidden="true">MOUJA</span>
+        <span class="brand-tag" data-i18n="brand.tag">Club d'entraînement · Aïn Diab</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-i18n-attr="aria-label:nav.menuToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="#disciplines" data-i18n="nav.disciplines">Disciplines</a></li>
+          <li><a href="#planning" data-i18n="nav.planning">Planning</a></li>
+          <li><a href="#abonnements" data-i18n="nav.abonnements">Abonnements</a></li>
+          <li><a href="#coachs" data-i18n="nav.coachs">Coachs</a></li>
+          <li><a href="#reserver" data-i18n="nav.infos">Infos</a></li>
+        </ul>
+        <div class="lang" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Langue">
+          <button type="button" data-lang="fr" lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="ar" lang="ar" aria-pressed="false">عربي</button>
+        </div>
+        <a class="btn btn-small" href="#reserver" data-trial data-i18n="nav.cta">Séance d'essai</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Accueil ============ -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="kicker" data-i18n="hero.kicker">Casablanca · Corniche</p>
+          <h1 class="hero-title">
+            <span class="l1" data-i18n="hero.title1">S'entraîner</span>
+            <span class="l2" data-i18n="hero.title2">face à</span>
+            <span class="l3" data-i18n="hero.title3">l'Atlantique</span>
+          </h1>
+          <p class="hero-lead" data-i18n="hero.lead">Un club de quartier au bout de la corniche.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#reserver" data-trial data-i18n="hero.cta">Réserver ma séance d'essai</a>
+            <a class="btn btn-ghost" href="#planning" data-i18n="hero.cta2">Voir le planning</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <div class="photo" data-photo="hero" role="img" data-i18n-attr="aria-label:hero.photoAlt" aria-label="Coucher de soleil sur la plage"></div>
+          <span class="lane-num" aria-hidden="true">1</span>
+        </figure>
+      </div>
+      <div class="facts">
+        <dl class="wrap facts-row" data-i18n-attr="aria-label:facts.label" aria-label="Le club en quatre chiffres">
+          <div><dt class="num" data-i18n="facts.hoursV">06:30 – 22:00</dt><dd data-i18n="facts.hoursL">du lundi au vendredi</dd></div>
+          <div><dt class="num" data-i18n="facts.groupV">12</dt><dd data-i18n="facts.groupL">personnes au plus par cours</dd></div>
+          <div><dt class="num" data-i18n="facts.trialV">1re</dt><dd data-i18n="facts.trialL">séance offerte</dd></div>
+          <div><dt class="num" data-i18n="facts.lanesV">5</dt><dd data-i18n="facts.lanesL">disciplines, un seul abonnement</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ Disciplines ============ -->
+    <section class="section" id="disciplines" aria-labelledby="t-disc">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="lane" aria-hidden="true">01</span>
+          <div>
+            <h2 id="t-disc" data-i18n="disc.title">Disciplines</h2>
+            <p class="sec-lead" data-i18n="disc.lead"></p>
+          </div>
+        </header>
+        <ol class="disc-grid"></ol>
+      </div>
+    </section>
+
+    <!-- ============ Planning ============ -->
+    <section class="section section-dark" id="planning" aria-labelledby="t-plan">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="lane" aria-hidden="true">02</span>
+          <div>
+            <h2 id="t-plan" data-i18n="plan.title">Planning de la semaine</h2>
+            <p class="sec-lead" data-i18n="plan.lead"></p>
+          </div>
+        </header>
+        <div class="filters" role="group" data-i18n-attr="aria-label:plan.filter" aria-label="Filtrer par discipline"></div>
+        <div class="day-tabs" role="group" data-i18n-attr="aria-label:plan.days" aria-label="Jour affiché"></div>
+        <div class="week"></div>
+      </div>
+    </section>
+
+    <!-- ============ Abonnements ============ -->
+    <section class="section" id="abonnements" aria-labelledby="t-plans">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="lane" aria-hidden="true">03</span>
+          <div>
+            <h2 id="t-plans" data-i18n="plans.title">Abonnements</h2>
+            <p class="sec-lead" data-i18n="plans.lead"></p>
+          </div>
+        </header>
+        <fieldset class="period">
+          <legend class="visually-hidden" data-i18n="plans.period">Facturation</legend>
+          <input type="radio" name="period" id="p-month" value="monthly" checked>
+          <label for="p-month" data-i18n="plans.monthly">Mensuel</label>
+          <input type="radio" name="period" id="p-year" value="yearly">
+          <label for="p-year" data-i18n="plans.yearly">Annuel</label>
+        </fieldset>
+        <div class="plans"></div>
+      </div>
+    </section>
+
+    <!-- ============ Le club ============ -->
+    <section class="club" aria-labelledby="t-club">
+      <div class="club-photo photo" data-photo="club" aria-hidden="true"></div>
+      <div class="wrap club-inner">
+        <div class="club-card">
+          <span class="lane" aria-hidden="true">04</span>
+          <h2 id="t-club" data-i18n="club.title">Le club</h2>
+          <p data-i18n="club.lead"></p>
+          <ul class="club-list">
+            <li data-i18n="club.p1"></li>
+            <li data-i18n="club.p2"></li>
+            <li data-i18n="club.p3"></li>
+            <li data-i18n="club.p4"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Coachs ============ -->
+    <section class="section" id="coachs" aria-labelledby="t-coachs">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="lane" aria-hidden="true">05</span>
+          <div>
+            <h2 id="t-coachs" data-i18n="coachs.title">Les coachs</h2>
+            <p class="sec-lead" data-i18n="coachs.lead"></p>
+          </div>
+        </header>
+        <ul class="coaches"></ul>
+      </div>
+    </section>
+
+    <!-- ============ Avis (masqués tant qu'il n'y en a pas) ============ -->
+    <section class="section" id="avis" aria-labelledby="t-avis" hidden>
+      <div class="wrap">
+        <h2 id="t-avis" data-i18n="avis.title">Ce qu'en disent les membres</h2>
+        <div class="reviews"></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-tight" id="faq" aria-labelledby="t-faq">
+      <div class="wrap faq-grid">
+        <header class="sec-head">
+          <span class="lane" aria-hidden="true">06</span>
+          <div><h2 id="t-faq" data-i18n="faq.title">Questions fréquentes</h2></div>
+        </header>
+        <div class="faq">
+          <details><summary data-i18n="faq.q1"></summary><p data-i18n="faq.a1"></p></details>
+          <details><summary data-i18n="faq.q2"></summary><p data-i18n="faq.a2"></p></details>
+          <details><summary data-i18n="faq.q3"></summary><p data-i18n="faq.a3"></p></details>
+          <details><summary data-i18n="faq.q4"></summary><p data-i18n="faq.a4"></p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Réserver ============ -->
+    <section class="section section-dark" id="reserver" aria-labelledby="t-book">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="lane" aria-hidden="true">07</span>
+          <div>
+            <h2 id="t-book" data-i18n="book.title">Réserver une séance</h2>
+            <p class="sec-lead" data-i18n="book.lead"></p>
+          </div>
+        </header>
+        <div class="book-grid">
+          <form class="book-form" novalidate>
+            <div class="field">
+              <label for="f-session" data-i18n="form.session">Cours</label>
+              <select id="f-session" name="session" aria-describedby="e-session" required></select>
+              <p class="error" id="e-session" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-name" data-i18n="form.name">Votre prénom</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" aria-describedby="e-name" required>
+              <p class="error" id="e-name" aria-live="polite"></p>
+            </div>
+            <fieldset class="field levels" aria-describedby="e-level">
+              <legend data-i18n="form.level">Votre niveau</legend>
+              <div class="level-row">
+                <input type="radio" name="level" id="lv1" value="form.lvBeginner"><label for="lv1" data-i18n="form.lvBeginner">Je débute</label>
+                <input type="radio" name="level" id="lv2" value="form.lvRegular"><label for="lv2" data-i18n="form.lvRegular">Je m'entraîne déjà</label>
+                <input type="radio" name="level" id="lv3" value="form.lvAdvanced"><label for="lv3" data-i18n="form.lvAdvanced">Confirmé·e</label>
+              </div>
+              <p class="error" id="e-level" aria-live="polite"></p>
+            </fieldset>
+            <div class="field check">
+              <input type="checkbox" id="f-trial" name="trial">
+              <label for="f-trial" data-i18n="form.trial">C'est ma première séance au club</label>
+            </div>
+            <div class="field">
+              <label for="f-note"><span data-i18n="form.note">Une précision</span> <span class="opt">(<span data-i18n="form.optional">facultatif</span>)</span></label>
+              <textarea id="f-note" name="note" rows="3" data-i18n-attr="placeholder:form.notePh"></textarea>
+            </div>
+            <button class="btn btn-block" type="submit" data-i18n="form.submit">Envoyer sur WhatsApp</button>
+            <p class="hint" data-i18n="form.hint"></p>
+          </form>
+
+          <aside class="info">
+            <h3 data-i18n="book.hours">Horaires</h3>
+            <dl class="hours"></dl>
+            <h3 data-i18n="book.address">Adresse</h3>
+            <p data-i18n="book.addressText"></p>
+            <h3 data-i18n="book.contact">Contact</h3>
+            <p class="contact">
+              <a class="js-phone num" dir="ltr" href="#"></a><br>
+              <a class="js-email" href="#"></a>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-brand" aria-hidden="true">MOUJA</p>
+      <p data-i18n="footer.demo"></p>
+      <p class="credits"><span data-i18n="footer.photos">Photos : Wikimedia Commons —</span> <span class="js-credits"></span></p>
+      <p class="small">© <span class="js-year num"></span> · <span data-i18n="footer.rights">Site de démonstration</span></p>
+    </div>
+  </footer>
+
+  <a class="wa-float js-wa" href="#" target="_blank" rel="noopener" data-i18n-attr="aria-label:wa.label" aria-label="Écrire au club sur WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.45 15.05L2.5 21.5l4.57-1.07A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.71.64.66-2.64-.2-.31a8.2 8.2 0 1 1 6.73 3.64Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.77 2.77 0 0 0-.86 2.06c0 1.21.88 2.38 1 2.55.13.16 1.73 2.64 4.2 3.7 1.56.67 2.17.73 2.95.61.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+  </a>
+</body>
+</html>
