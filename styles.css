@@ -186,7 +186,10 @@ a { color: inherit; }
   background: var(--ink); color: var(--beton); margin-bottom: 24px;
 }
 [dir="rtl"] .kicker { letter-spacing: 0; }
-.hero-title { font-weight: 800; font-size: clamp(56px, 9.6vw, 140px); line-height: 0.86; margin-bottom: 28px; }
+/* Taille calée sur la LARGEUR DE LA COLONNE (cqi), pas sur l'écran : « l'Atlantique » ≈ 5,45 em
+   débordait sous la photo dès 1024 px quand la taille suivait 9.6vw. */
+.hero-text { container-type: inline-size; }
+.hero-title { font-weight: 800; font-size: clamp(48px, 17.5cqi, 140px); line-height: 0.86; margin-bottom: 28px; }
 .hero-title span { display: block; }
 .hero-title .l2 { font-style: italic; color: var(--verm); font-size: 0.62em; padding-inline-start: 0.6em; }
 .hero-title .l3 { -webkit-text-stroke: 0; }
